@@ -29,7 +29,7 @@ Installation
 
 To install run::
 
-    pip install django-async
+    pip install django-async-gt
 
 
 Configuration
