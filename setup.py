@@ -1,12 +1,12 @@
 from distutils.core import setup
-import image_upload
+import async_image_save
 
-long_description = open('README').read()
+long_description = open('README.rst').read()
 
 setup(
     name='django-async',
-    version=0.1,
-    packages=['image_upload',],
+    version='0.1',
+    packages=['async_image_save',],
     description='a simple app to asynchronously upload images with Django, using Celery',
     long_description=long_description,
     author='Gregory Terzian',
@@ -14,7 +14,7 @@ setup(
     license='BSD License',
     url='https://github.com/gterzian/django_async.git',
     platforms=["any"],
-    requires=['django', 'django-celery', 'pil'],
+    requires=['django', 'celery', 'pil'],
     classifiers=[
         'Natural Language :: English',
         'Operating System :: OS Independent',
