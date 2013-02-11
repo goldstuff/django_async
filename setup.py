@@ -5,14 +5,15 @@ long_description = open('README.rst').read()
 
 setup(
     name='django-async-gt',
-    version='0.1',
+    data_files=[('', ['requirements.txt', 'README.rst', 'LICENSE', 'MANIFEST', '.gitignore']),],
+    version='0.2',
     packages=['async_image_save',],
     description='a simple app to asynchronously upload images with Django, using Celery',
     long_description=long_description,
     author='Gregory Terzian',
     author_email='gregory.terzian@gmail.com',
     license='BSD License',
-    url='https://github.com/gterzian/django_async.git',
+    url='http://github.com/gterzian/django_async.git',
     platforms=["any"],
     requires=['django', 'celery', 'pil'],
     classifiers=[
