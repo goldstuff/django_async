@@ -1,0 +1,3 @@
+PIL
+Django
+django-celery
