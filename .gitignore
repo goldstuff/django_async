@@ -3,3 +3,4 @@ venv
 *.db
 *.DS_Store
 .env
+build
