@@ -14,7 +14,7 @@ License
 
 All code is under a BSD-style license, see LICENSE for details.
 
-Source: http://github.com/duointeractive/django-athumb
+Source: https://github.com/gterzian/django_async.git
 
 Requirements
 ------------
