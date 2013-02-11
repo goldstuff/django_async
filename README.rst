@@ -52,7 +52,7 @@ The functionalities of this app reside in the save_image function, to be used in
 
 ::
 
-    from async_image_save import save_image
+    from async_image_save.utils import save_image
 
     def example_view(request):
         if request.method == "POST":
