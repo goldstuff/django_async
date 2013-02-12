@@ -52,11 +52,11 @@ Add to ``INSTALLED_APPS``::
 About Django and image upload
 -----------------------------
 
-Django uploads images and other files in the form of <a href='https://docs.djangoproject.com/en/1.4/topics/http/file-uploads/#django.core.files.uploadedfile.UploadedFile'>UpLoadedFile objects</a>.
+Django uploads images and other files in the form of UpLoadedFile objects.
 UpLoadedFile is the abstract baseclasse, while TemporaryUploadedFile and InMemoryUploadedFile are the built-in concrete subclasses.
 An UploadedFile object behaves somewhat like a file object and represents some file data that the user submitted with a form.
 
-The uploadedfile is received in the view as part of request.FILES, which you will usually <a href='https://docs.djangoproject.com/en/1.4/ref/forms/api/#binding-uploaded-files'>bind to a form</a>.
+The uploadedfile is received in the view as part of request.FILES, which you will usually bind to a form.
 Running the form's is_valid method will then validate this file, or in the case of an ImageField whether the fiel is an actual image, and return the UpLoadedFile object for you to use,
 as either a TemporaryUploadedFile and InMemoryUploadedFile.
 
@@ -71,6 +71,9 @@ The remaining option is to deconstruct the file object, write it's data into a s
 This data can be pickled and therefore passed on to Celery. You then simply need to reconstruct an actual emporaryUploadedFile and InMemoryUploadedFile on the other end,
 and bind this object to an instance of a model, by passing the id of that instance along with all other  raw file 'data'. 
 
+Read the docs
+UploadedFile: https://docs.djangoproject.com/en/1.4/topics/http/file-uploads/#django.core.files.uploadedfile.UploadedFile
+Binding data to forms: https://docs.djangoproject.com/en/1.4/ref/forms/api/#binding-uploaded-files
 
 How to use it in your project
 -----------------------------
