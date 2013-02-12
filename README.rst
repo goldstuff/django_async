@@ -71,8 +71,8 @@ The Solution: de- and reconstruct the image
 -------------------------------------------
 
 The remaining option is to deconstruct the file object, write it's data into a string and taking all the other info that you need.
-This data can be pickled and therefore passed on to Celery. You then simply need to reconstruct an actual emporaryUploadedFile and InMemoryUploadedFile on the other end,
-and bind this object to an instance of a model, by passing the id of that instance along with all other  raw file 'data'. 
+This data can be pickled and therefore passed on to Celery. You then simply need to reconstruct an actual TemporaryUploadedFile or InMemoryUploadedFile object on the other end,
+and bind this object to an instance of a model, by passing the id of that instance along with all other raw file 'data'. You can then finally save the model instance.
 
 
 Read the Django docs
