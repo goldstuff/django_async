@@ -4,7 +4,7 @@ import async_image_save
 setup(
     name='django-async-gt',
     data_files=[('', ['requirements.txt', 'README.rst', 'LICENSE', 'MANIFEST', '.gitignore']),],
-    version='0.6',
+    version='0.6.1',
     packages=['async_image_save',],
     description='a simple app to asynchronously upload images with Django, using Celery',
     long_description=open('README.rst').read(),

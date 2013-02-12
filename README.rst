@@ -87,6 +87,9 @@ How to use it in your project
 -----------------------------
 
 The functionalities of this app reside in the save_image function, to be used in your views like the below.
+The function deconstructs the image and sends the data to the async_save task. Please not that the task clears the cache. This is necessary in my opinion because
+just adding the image to the instance doesn't invalidate the cache like creating a new instance would, therefore the saved image is not seen by the user until after the cache time out.
+Therefore clearing the cache in the task seems necessary.
 
 ::
 
