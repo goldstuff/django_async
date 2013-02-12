@@ -72,7 +72,9 @@ This data can be pickled and therefore passed on to Celery. You then simply need
 and bind this object to an instance of a model, by passing the id of that instance along with all other  raw file 'data'. 
 
 Read the docs
+
 UploadedFile: https://docs.djangoproject.com/en/1.4/topics/http/file-uploads/#django.core.files.uploadedfile.UploadedFile
+
 Binding data to forms: https://docs.djangoproject.com/en/1.4/ref/forms/api/#binding-uploaded-files
 
 How to use it in your project
